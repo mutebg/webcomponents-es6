@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<script src="carousel.js"></script>
+	<style>
+		.carousel {
+			width: 400px;
+			overflow: hidden;
+			margin: 50px;
+			position: relative;
+		}
+
+		.carousel__wrapper {
+			margin:0;
+			padding:0;
+			width: 1000px;
+			transition: all 1s;
+			position: relative;
+		}
+
+		.carousel__item {
+			float: left;
+			display: block;
+			width: 100px;
+			height: 100px;
+			background: red;
+			margin: 0;
+		}
+
+		.carousel__btn {
+			position: absolute;
+			top: 40px;
+			z-index: 2;
+		}
+
+		.carousel__btn--prev {
+		 	left: 0;
+		}
+
+		.carousel__btn--next {
+		 	right: 0;
+		}
+
+		.hide {
+		 	dispay: none;
+		  	opacity: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="carousel">
+		<ul class="carousel__wrapper">
+			<li class="carousel__item">Lorem ipsum.</li>
+			<li class="carousel__item">Facilis, accusamus!</li>
+			<li class="carousel__item">Ipsam, dolorem.</li>
+			<li class="carousel__item">Adipisci, nobis.</li>
+			<li class="carousel__item">Ullam, sint!</li>
+			<li class="carousel__item">Optio, non.</li>
+			<li class="carousel__item">Delectus, assumenda.</li>
+			<li class="carousel__item">Quia, perferendis.</li>
+			<li class="carousel__item">Architecto, molestias.</li>
+			<li class="carousel__item">Eius, explicabo.</li>
+		</ul>
+		<button class="carousel__btn carousel__btn--prev">prev</button>
+		<button class="carousel__btn carousel__btn--next">next</button>
+	</div>
+	<script>
+		var carousel = new Carousel();
+	</script>
+</body>
+</html>
